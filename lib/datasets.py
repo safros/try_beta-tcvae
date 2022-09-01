@@ -7,7 +7,7 @@ import torchvision.transforms as transforms
 class Shapes(object):
 
     def __init__(self, dataset_zip=None):
-        loc = 'data/dsprites_ndarray_co1sh3sc6or40x32y32_64x64.npz'
+        loc = './data/dsprites_ndarray_co1sh3sc6or40x32y32_64x64.npz'
         if dataset_zip is None:
             self.dataset_zip = np.load(loc, encoding='latin1')
         else:
